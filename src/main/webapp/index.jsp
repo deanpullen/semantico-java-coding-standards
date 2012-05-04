@@ -12,7 +12,7 @@
             </ul>
         </nav>
 
-        <h1><a id="logo" href="" class="visuallyhidden">Roundarch Isobar</a></h1>
+        <h1><a id="logo" href="" class="visuallyhidden">Semantico Ltd</a></h1>
 
         <canvas id="canvas-logo" width="500" height="300">
             <strong>HTML5 browser needed</strong>
@@ -24,8 +24,14 @@
     </header>
 
     <div id="main" role="document">
-
         <jsp:include page="sections/general.html"/>
+        <jsp:include page="sections/whiteSpace.html"/>
+        <jsp:include page="sections/programmingPractices.html"/>
+        <jsp:include page="sections/classes.html"/>
+        <jsp:include page="sections/declarations.html"/>
+        <jsp:include page="sections/statements.html"/>
+
+        <jsp:include page="sections/frontEndGeneral.html"/>
         <jsp:include page="sections/markup.html"/>
         <jsp:include page="sections/css.html"/>
         <jsp:include page="sections/javascript.html"/>
