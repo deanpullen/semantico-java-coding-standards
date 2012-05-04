@@ -30,6 +30,7 @@
         <jsp:include page="sections/classes.html"/>
         <jsp:include page="sections/declarations.html"/>
         <jsp:include page="sections/statements.html"/>
+        <jsp:include page="sections/overallExamples.html"/>
 
         <jsp:include page="sections/frontEndGeneral.html"/>
         <jsp:include page="sections/markup.html"/>
