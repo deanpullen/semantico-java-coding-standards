@@ -38,17 +38,54 @@
 
     <p>Use a singularly defined <a href="#constants">constant</a>!</p>
 
-    <h2 id="variableAssignments">VariableAssignments</h2>
+    <h2 id="variableAssignments">Variable Assignments</h2>
 
     <p>Avoid using an object to access a class (static) variable or method. Use a class name instead. For example:</p>
 
+    <figure class="preCode">Avoid:</figure>
+    <textarea class="brush:html">
+        fooBar.fChar = barFoo.lchar = 'c'; // AVOID!
+    </textarea>
+
+    <p>Do not use embedded assignments in an attempt to improve run-time performance. This is the job of the compiler.
+        Example:</p>
+
+    <figure class="preCode">Avoid:</figure>
+    <textarea class="brush:html">
+        d = (a = b + c) + r;        // AVOID!
+    </textarea>
+
+    <p>Should actually be written like:</p>
+
+    <figure class="preCode">Actual:</figure>
+    <textarea class="brush:html">
+        a = b + c;
+        d = a + r;
+    </textarea>
+
+
+    <h2 id="parentheses">Parentheses</h2>
+
+    <p>It is generally a good idea to use parentheses liberally in expressions involving mixed operators to avoid operator
+        precedence problems.</p>
+    <p>Even if the operator precedence seems clear to you, it might not be to others-you shouldn't assume that other
+        programmers know precedence as well as you do.</p>
+
     <figure class="preCode">Examples:</figure>
     <textarea class="brush:html">
-        classMethod();             //OK
+        if (a == b && c == d)     // AVOID!
+        if ((a == b) && (c == d)) // RIGHT
+    </textarea>
 
-        AClass.classMethod();      //OK
 
-        anObject.classMethod();    //AVOID!
+    <h2 id="expressionsConditional">Expressions before `?' in the Conditional Operator</h2>
+
+    <p>If an expression containing a binary operator appears before the ? in the ternary ?: operator, it should be
+        parenthesized.</p>
+
+    <figure class="preCode">Example:</figure>
+    <textarea class="brush:html">
+        (x >= 0) ? x : -x;
     </textarea>
 
 </section>

@@ -11,11 +11,16 @@
 	
 	<h2 id="beginningComments">Beginning Comments</h2>
 	
-	<p>All source files should begin with a c-style comment that lists the class name and description, author, version information,
+	<p>All classes comment that lists the class name and description, author, version information,
         date, and copyright notice:</p>
+    <p>This comes under the package name and import statements and just above the class declaration.</p>
 
     <figure class="preCode">Class start</figure>
     <textarea class="brush:html">
+       package com.semantico.example;
+
+       import java.util.*;
+
        /*
         * Classname and description
         *
@@ -26,6 +31,9 @@
         * @author Dean Pullen
         * @since 04-05-2012
         */
+       public class ClassNameHere {
+           ...
+       }
     </textarea>
 
 	<h2 id="packageAndImportStatements">Package and Import Statements</h2>
