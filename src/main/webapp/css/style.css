@@ -225,7 +225,7 @@ body, select, input, textarea {
 
 body {
 	background: #fff url('img/bg-body.gif') repeat-x; 
-	color: #000;
+
 	min-width: 960px;
 }
  

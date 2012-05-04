@@ -32,6 +32,7 @@
         <jsp:include page="sections/statements.html"/>
         <jsp:include page="sections/overallExamples.html"/>
 
+        <%--
         <jsp:include page="sections/frontEndGeneral.html"/>
         <jsp:include page="sections/markup.html"/>
         <jsp:include page="sections/css.html"/>
@@ -43,7 +44,7 @@
         <jsp:include page="sections/codeReviews.html"/>
         <jsp:include page="sections/appendices.html"/>
         <jsp:include page="sections/revisionHistory.html"/>
-
+        --%>
     </div><!--! End of #main section !-->
 
     <nav id="side" class="nav-right" role="navigation">
