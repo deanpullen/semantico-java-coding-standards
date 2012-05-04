@@ -13,7 +13,7 @@
 	<p>Each line should contain at most one statement:</p>
 
     <figure class="preCode">Basic:</figure>
-    <textarea class="brush:html">
+    <textarea class="brush:java">
         argv++;         // Correct
         argc--;         // Correct
         argv++; argc--; // AVOID!
@@ -37,7 +37,7 @@
 	<p>A return statement with a value should not use parentheses unless they make the return value more obvious in some way:</p>
 
     <figure class="preCode">Return:</figure>
-	<textarea class="brush:html">
+	<textarea class="brush:java">
         return;
 
         return myDisk.size();
@@ -51,7 +51,7 @@
     <p>Note the space before the parentheses and the braces.</p>
 
     <figure class="preCode">If/Else:</figure>
-    <textarea class="brush:html">
+    <textarea class="brush:java">
         if (condition) {
             statements;
         }
@@ -74,7 +74,7 @@
     <p>You <b>MUST</b> always use braces, do not do:</p>
 
     <figure class="preCode">Bad:</figure>
-    <textarea class="brush:html">
+    <textarea class="brush:java">
         if (condition) //AVOID! THIS OMITS THE BRACES {}!
             statement;
     </textarea>
@@ -85,7 +85,7 @@
     <p>A standard "for" statement should have either this form:</p>
 
     <figure class="preCode">For:</figure>
-    <textarea class="brush:html">
+    <textarea class="brush:java">
         for (initialization; condition; update) {
             statements;
         }
@@ -94,7 +94,7 @@
     <p>Or the new enhanced (Java 5) for-each form:</p>
 
     <figure class="preCode">New(ish) for:</figure>
-    <textarea class="brush:html">
+    <textarea class="brush:java">
         for (Object object : collection[Object]) {
             statements;
         }
@@ -104,7 +104,7 @@
         should have the following form:</p>
 
     <figure class="preCode">Empty for:</figure>
-    <textarea class="brush:html">
+    <textarea class="brush:java">
         for (initialization; condition; update);
     </textarea>
 
@@ -118,7 +118,7 @@
     <p>A "while" statement should have the following form:</p>
 
     <figure class="preCode">While:</figure>
-    <textarea class="brush:html">
+    <textarea class="brush:java">
         while (condition) {
             statements;
         }
@@ -127,7 +127,7 @@
     <p>An empty while statement should have the following form:</p>
 
     <figure class="preCode">Empty While:</figure>
-    <textarea class="brush:html">
+    <textarea class="brush:java">
         while (condition);
     </textarea>
 
@@ -136,7 +136,7 @@
     <p>A do-while statement should have the following form, note the while is on the same line as the ending brace:</p>
 
     <figure class="preCode">Do-while:</figure>
-    <textarea class="brush:html">
+    <textarea class="brush:java">
         do {
             statements;
         } while (condition);
@@ -147,7 +147,7 @@
     <p>A switch statement should have the following form:</p>
 
     <figure class="preCode">Switch:</figure>
-    <textarea class="brush:html">
+    <textarea class="brush:java">
         switch (condition) {
             case ABC:
                 statements;
@@ -176,7 +176,7 @@
     <p>Note the catch on the same line as the closing try brace.</p>
 
     <figure class="preCode">Try-catch:</figure>
-    <textarea class="brush:html">
+    <textarea class="brush:java">
         try {
             statements;
         } catch (ExceptionClass e) {
@@ -188,7 +188,7 @@
     <p>The finally executes regardless of whether or not the try block has completed successfully.</p>
 
     <figure class="preCode">Try-catch-finally:</figure>
-    <textarea class="brush:html">
+    <textarea class="brush:java">
         try {
             statements;
         } catch (ExceptionClass e) {
