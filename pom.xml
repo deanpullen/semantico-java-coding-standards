@@ -47,6 +47,38 @@
                     <target>1.6</target>
                 </configuration>
             </plugin>
+            <plugin>
+                <groupId>org.mortbay.jetty</groupId>
+                <artifactId>jetty-maven-plugin</artifactId>
+                <configuration>
+                    <stopKey>sipp2</stopKey>
+                    <stopPort>9999</stopPort>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>start-jetty</id>
+                        <phase>pre-integration-test</phase>
+                        <goals>
+                            <goal>start</goal>
+                        </goals>
+                        <configuration>
+                            <daemon>true</daemon>
+                            <connectors>
+                                <connector implementation="org.eclipse.jetty.server.nio.SelectChannelConnector">
+                                    <port>8181</port>
+                                </connector>
+                            </connectors>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>stop-jetty</id>
+                        <phase>post-integration-test</phase>
+                        <goals>
+                            <goal>stop</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
         </plugins>
     </build>
 </project>
