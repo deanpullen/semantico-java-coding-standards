@@ -24,6 +24,8 @@
     </header>
 
     <div id="main" role="document">
+        <jsp:include page="sections/overview.html"/>
+        <jsp:include page="sections/ides.html"/>
         <jsp:include page="sections/general.html"/>
         <jsp:include page="sections/whiteSpace.html"/>
         <jsp:include page="sections/programmingPractices.html"/>

@@ -213,7 +213,7 @@ body, select, input, textarea {
   /* if using @font-face: */
   /* font-family: MyFontFamily, Arial, serif;*/
   font-family: Calibri, Helvetica, Trebuchet MS, Arial, sans-serif;
-  font-size: 16px;
+  /* removed by Dean: font-size: 16px; */
 }
 
 
